@@ -4,7 +4,7 @@ stdin/out pipe all the things through a webrtc mesh
 
 #### Setup
 ```
-npm install --save 
+npm install
 ```
 
 #### Usage
