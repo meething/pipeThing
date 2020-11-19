@@ -1,2 +1,13 @@
 # pipeThing
-pipe all the things through an rtc mesh
+stdin/out pipe all the things through a webrtc mesh
+
+## Setup
+```
+npm install --save 
+```
+
+## Usage
+```
+pipething {secret}
+```
+

@@ -1,0 +1,21 @@
+{
+  "name": "pipething",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "pipething": "pipething.js"
+  },
+  "main": "pipething.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "minimist": "^1.2.5",
+    "webrtc-mesh": "^0.9.2-beta",
+    "websocket": "^1.0.32",
+    "wrtc": "^0.4.6"
+  }
+}
