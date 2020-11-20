@@ -13,4 +13,4 @@ pipething {secret}
 ```
 
 #### Credits
-Powered by `offlineseven`
+Powered by [Team Meething / OffLine7](https://github.com/meething)
