@@ -22,7 +22,5 @@ var config = {
 var mesh = Mesh(config);
 
 var meshedStream = mesh.getStream();
-
 mesh.pipe(meshedStream.push.bind(meshedStream));
 process.stdin.pipe(meshedStream).pipe(process.stdout);
-
