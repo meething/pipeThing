@@ -20,27 +20,6 @@ var config = {
   debug: false
 }
 var mesh = Mesh(config);
-//process.stdin.on('data', data => { mesh.sendToAll(data) });
-//mesh.pipe( (ev) => { process.stdout.write(Buffer.from(ev.data)) });
 
-var meshedStream = mesh.getStream();
 mesh.pipe(meshedStream.push.bind(meshedStream));
 process.stdin.pipe(meshedStream).pipe(process.stdout);
-
-function toArrayBuffer(buf) {
-    var ab = new ArrayBuffer(buf.length);
-    var view = new Uint8Array(ab);
-    for (var i = 0; i < buf.length; ++i) {
-        view[i] = buf[i];
-    }
-    return ab;
-}
-
-function toBuffer(ab) {
-    var buf = Buffer.alloc(ab.byteLength);
-    var view = new Uint8Array(ab);
-    for (var i = 0; i < buf.length; ++i) {
-        buf[i] = view[i];
-    }
-    return buf;
-}
